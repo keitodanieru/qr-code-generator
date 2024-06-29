@@ -58,15 +58,37 @@ body{
     background-image: linear-gradient(to right, #782885 0%, #2D213D 20%, #26253C 30%, #07B6D5 100%);
 }
 
+#imageBox {
+    border-radius:5px;
+    overflow:hidden;
+
+}
 #imageBox img{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#imageBox.show-img{
-    max-height: 300px;
-    margin: 10px auto;
+.error{
+    animation: shake 0.1s linear 5;
+    background-color: #f68484;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 
