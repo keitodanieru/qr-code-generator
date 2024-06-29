@@ -58,23 +58,17 @@ body{
     background-image: linear-gradient(to right, #782885 0%, #2D213D 20%, #26253C 30%, #07B6D5 100%);
 }
 
-#imageBox{
-    width: 200px;
-    border-radius: 5px;
-    max-height: 0;
-    overflow: hidden;
-}
-
 #imageBox img{
-    width: 100%;
-    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 #imageBox.show-img{
     max-height: 300px;
     margin: 10px auto;
 }
+
 
 
 

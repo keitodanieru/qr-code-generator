@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <p>Input your link here</p>
-      <input type="text" placeholder="Link" id="qrText" />
+      <input type="text" placeholder="Link" id="qrText">
       <div id="imageBox">
         <img src="" id="qrImage">
       </div>
@@ -22,7 +22,7 @@
 
       function generateQR() {
         qrImage.src =
-          "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" +
+          "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" +
           qrText.value;
       }
     </script>
